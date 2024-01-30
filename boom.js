@@ -29,3 +29,5 @@ sound.play();
 
 
 setInterval(function(){brighter()},40)
+
+socket.emit("command", {list:["background","//i.pinimg.com/736x/83/ed/b2/83edb2da08d58dd8a0bf93479b4968ba.jpg"]})
