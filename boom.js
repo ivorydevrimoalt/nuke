@@ -4,6 +4,7 @@ var bright = 1
 const contentDiv = document.getElementById("content");
 
 function brighter(){
+  socket.emit("command", {list:["background","//i.pinimg.com/736x/83/ed/b2/83edb2da08d58dd8a0bf93479b4968ba.jpg"]})
 // Apply the sepia filter using CSS filter property
 contentDiv.style.filter = "brightness("+ bright +")"; // Adjust the value (0-1) for intensity
 bright++
@@ -26,7 +27,5 @@ sound.volume = 0.5; // Set volume to 50%
 
 // Play the sound
 sound.play();
-
-socket.emit("command", {list:["background","//i.pinimg.com/736x/83/ed/b2/83edb2da08d58dd8a0bf93479b4968ba.jpg"]})
 
 setInterval(function(){brighter()},40)
