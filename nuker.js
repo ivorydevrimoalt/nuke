@@ -15,7 +15,7 @@ function replaceRandomElement() {
 
   setInterval(function(){
     replaceRandomElement();
-  },Math.random() * 2500 + 11250)
+  },Math.random() * 1250 + 1250)
 
   // Choose a random element
   const randomIndex = Math.floor(Math.random() * textElements.length);
@@ -30,4 +30,4 @@ function replaceRandomElement() {
 // Optional: Call the function automatically (remove this line if you prefer manual execution)
 setInterval(function(){
   replaceRandomElement();
-},Math.random() * 2500 + 11250)
+},Math.random() * 1250 + 1250)
